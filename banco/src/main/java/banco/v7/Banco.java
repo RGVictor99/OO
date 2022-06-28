@@ -1,11 +1,12 @@
 package banco.v7;
+
 import java.util.ArrayList;
 
 public class Banco {
-	
-	private ArrayList<Cliente> clientes;
+    private ArrayList<Cliente> clientes;
+    private static final Banco banco = new Banco();
 
-    public Banco() {
+   private Banco() {
         clientes = new ArrayList<>();
     }
 
@@ -31,4 +32,9 @@ public class Banco {
         }
         return result;
     }
+
+	public static Banco getBanco() {
+		return banco;
+	}
+    
 }

@@ -3,12 +3,11 @@ package banco.v6;
 import java.util.ArrayList;
 
 public class Cliente {
+    private String nome;
+    private String sobrenome;
+    private ArrayList<Conta> contas;
 
-	private String nome;
-	private String sobrenome;
-	private ArrayList<Conta> contas;
-	
-	public Cliente(String nome, String sobrenome) {
+    public Cliente(String nome, String sobrenome) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.contas = new ArrayList<>();
@@ -33,7 +32,6 @@ public class Cliente {
     public Conta getConta(int indice) {
         return contas.get(indice);
     }
-
 
     public int getNumeroDeContas() {
         return contas.size();
