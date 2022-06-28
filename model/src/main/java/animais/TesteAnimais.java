@@ -10,45 +10,42 @@ public class TesteAnimais {
 		Animal ab = new Aranha ("Aracnilda");
 		AnimalDeEstimacao ae = new Gato ("Pudim");
 		
-		System.out.println("O peixe" + peixe.getNome() + " possui " + peixe.getNumeroDePernas() + " pernas.");
-		peixe.caminhar();
-		peixe.brincar();
-		peixe.comer();
+		System.out.println("O peixe" + p.getNome() + " possui " + p.getNumeroDePernas() + " pernas.");
+		p.caminhar();
+		p.brincar();
+		p.comer();
 		
 		System.out.println();
 		
-		System.out.println("O gato " + gato.getNome() + " possui " + gato.getNumeroDePernas() + " pernas");
-        gato.caminhar();
-        gato.brincar();
-        gato.comer();
+		System.out.println("O gato " + g.getNome() + " possui " + g.getNumeroDePernas() + " pernas");
+        g.caminhar();
+        g.brincar();
+        g.comer();
 
         System.out.println();
-        System.out.println("O animal " + animal1.getNome() + " possui " + animal1.getNumeroDePernas() + " pernas");
-        animal1.caminhar();
-        if(animal1 instanceof Peixe) {
-            Peixe p = (Peixe) animal1;
-            p.brincar();
+        System.out.println("O animal " + a.getNome() + " possui " + a.getNumeroDePernas() + " pernas");
+        a.caminhar();
+        if(a instanceof Peixe) {
+            Peixe peixe = (Peixe) a;
+            peixe.brincar();
         }
-        animal1.comer();
+        a.comer();
 
 
         System.out.println();
-        System.out.println("O animal " + animal2.getNome() + " possui " + animal2.getNumeroDePernas() + " pernas");
-        animal2.caminhar();
-        animal2.comer();
+        System.out.println("O animal " + ab.getNome() + " possui " + ab.getNumeroDePernas() + " pernas");
+        ab.caminhar();
+        ab.comer();
 
         System.out.println();
         ae.brincar();
         if(ae instanceof Gato) {
-            Gato g = (Gato) ae;
+            Gato gato = (Gato) ae;
             System.out.println("O animal de estimação " + g.getNome() + " possui " + g.getNumeroDePernas() + " pernas");
-            g.caminhar();
-            g.comer();
+            gato.caminhar();
+            gato.comer();
         }
 
 
-    }
-	}
-	
-		
+    }		
 }
