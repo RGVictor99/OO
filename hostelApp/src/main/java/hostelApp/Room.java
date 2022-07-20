@@ -8,4 +8,56 @@ public class Room {
 	private String description;
 	private double dailyRate;
 	private double dimension;
+	
+	
+	
+	
+	public Room(int number, String type) {
+		super();
+		this.number = number;
+		this.type = type;
+	}
+	public int getNumber() {
+		return number;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public double getDailyRate() {
+		return dailyRate;
+	}
+	public void setDailyRate(double dailyRate) {
+		this.dailyRate = dailyRate;
+	}
+	public void setNumber(int number) {
+		this.number = number;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public int getFloor() {
+		return floor;
+	}
+	public void setFloor(int floor) {
+		this.floor = floor;
+	}
+	public double getDimension() {
+		return dimension;
+	}
+	public void setDimension(double dimension) {
+		this.dimension = dimension;
+	}
+	
 }
